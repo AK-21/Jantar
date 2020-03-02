@@ -1,0 +1,481 @@
+
+/*
+	Jantar 1.0
+	Copyright 2019 Arkadiusz Kostyra
+*/
+
+body
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div, header, main, footer, aside, nav, section, article
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header, main, footer, aside, nav, section, article
+{
+	display: block;
+}
+
+.container
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row
+{
+	display: block;
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+.col
+{
+	float: left;
+	display: block;
+	width: 100%;
+}
+
+.clf::after, .row::after
+{
+	content: "";
+	clear: both;
+	display:table;
+}
+
+.only
+{
+	display: none;
+}
+
+.left
+{
+	float:left;
+}
+
+.right
+{
+	float:right;
+}
+
+@media(min-width:1200px) /* xl */
+{	
+	.container
+	{
+		width: 1140px;
+	}
+	
+	.only.xl
+	{
+		display: block;
+	}
+	
+	/* 100% */	
+	.col.xl-100
+	{
+		width: 100%;
+	}
+	
+	/* 9/10 */
+	.col.xl-90
+	{
+		width: 90%;
+	}
+	
+	/* 4/5 */
+	.col.xl-80
+	{
+		width: 80%;
+	}
+	
+	/* 3/4 */
+	.col.xl-75
+	{
+		width: 75%;
+	}
+	
+	/* 7/10 */
+	.col.xl-70
+	{
+		width: 70%;
+	}
+	
+	/* 2/3 */
+	.col.xl-66
+	{
+		width: 66.66666%;
+	}
+	
+	/* 3/5 */
+	.col.xl-60
+	{
+		width: 60%;
+	}	
+	
+	/* 1/2 */
+	.col.xl-50
+	{
+		width: 50%;
+	}
+	
+	/* 2/5 */
+	.col.xl-40
+	{
+		width: 40%;
+	}
+	
+	/* 1/3 */
+	.col.xl-33
+	{
+		width: 33.33333%;
+	}
+	
+	/* 3/10 */
+	.col.xl-30
+	{
+		width: 30%;
+	}
+
+	/* 1/4 */
+	.col.xl-25
+	{
+		width: 25%;
+	}
+	
+	/* 1/5 */
+	.col.xl-20
+	{
+		width: 20%;
+	}
+	
+	/* 1/6 */
+	.col.xl-16
+	{
+		width: 16,66666%;
+	}
+	
+	/* 1/10 */
+	.col.xl-10
+	{
+		width: 10%;
+	}
+}
+
+@media(min-width:992px) and (max-width:1199px) /* l */
+{
+	.container
+	{
+		width: 960px;
+	}
+	
+	.only.l
+	{
+		display: block;
+	}
+	
+	/* 100% */	
+	.col.l-100
+	{
+		width: 100%;
+	}
+	
+	/* 9/10 */
+	.col.l-90
+	{
+		width: 90%;
+	}
+	
+	/* 4/5 */
+	.col.l-80
+	{
+		width: 80%;
+	}
+	
+	/* 3/4 */
+	.col.l-75
+	{
+		width: 75%;
+	}
+	
+	/* 7/10 */
+	.col.l-70
+	{
+		width: 70%;
+	}
+	
+	/* 2/3 */
+	.col.l-66
+	{
+		width: 66.66666%;
+	}
+	
+	/* 3/5 */
+	.col.l-60
+	{
+		width: 60%;
+	}	
+	
+	/* 1/2 */
+	.col.l-50
+	{
+		width: 50%;
+	}
+	
+	/* 2/5 */
+	.col.l-40
+	{
+		width: 40%;
+	}
+	
+	/* 1/3 */
+	.col.l-33
+	{
+		width: 33.33333%;
+	}
+	
+	/* 3/10 */
+	.col.l-30
+	{
+		width: 30%;
+	}
+
+	/* 1/4 */
+	.col.l-25
+	{
+		width: 25%;
+	}
+	
+	/* 1/5 */
+	.col.l-20
+	{
+		width: 20%;
+	}
+	
+	/* 1/6 */
+	.col.l-16
+	{
+		width: 16,66666%;
+	}
+	
+	/* 1/10 */
+	.col.l-10
+	{
+		width: 10%;
+	}
+}
+
+@media (min-width:600px) and (max-width:991px) /* m */
+{
+	.container
+	{
+		width: 570px;
+	}
+	
+	.only.m
+	{
+		display: block;
+	}
+	
+	/* 100% */	
+	.col.m-100
+	{
+		width: 100%;
+	}
+	
+	/* 9/10 */
+	.col.m-90
+	{
+		width: 90%;
+	}
+	
+	/* 4/5 */
+	.col.m-80
+	{
+		width: 80%;
+	}
+	
+	/* 3/4 */
+	.col.m-75
+	{
+		width: 75%;
+	}
+	
+	/* 7/10 */
+	.col.m-70
+	{
+		width: 70%;
+	}
+	
+	/* 2/3 */
+	.col.m-66
+	{
+		width: 66.66666%;
+	}
+	
+	/* 3/5 */
+	.col.m-60
+	{
+		width: 60%;
+	}	
+	
+	/* 1/2 */
+	.col.m-50
+	{
+		width: 50%;
+	}
+	
+	/* 2/5 */
+	.col.m-40
+	{
+		width: 40%;
+	}
+	
+	/* 1/3 */
+	.col.m-33
+	{
+		width: 33.33333%;
+	}
+	
+	/* 3/10 */
+	.col.m-30
+	{
+		width: 30%;
+	}
+
+	/* 1/4 */
+	.col.m-25
+	{
+		width: 25%;
+	}
+	
+	/* 1/5 */
+	.col.m-20
+	{
+		width: 20%;
+	}
+	
+	/* 1/6 */
+	.col.m-16
+	{
+		width: 16,66666%;
+	}
+	
+	/* 1/10 */
+	.col.m-10
+	{
+		width: 10%;
+	}
+}
+
+@media (max-width:599px) /* s */
+{
+	.container
+	{
+		width: 100%;
+	}
+	
+	.only.s
+	{
+		display: block;
+	}
+	
+	/* 100% */	
+	.col.s-100
+	{
+		width: 100%;
+	}
+	
+	/* 9/10 */
+	.col.s-90
+	{
+		width: 90%;
+	}
+	
+	/* 4/5 */
+	.col.s-80
+	{
+		width: 80%;
+	}
+	
+	/* 3/4 */
+	.col.s-75
+	{
+		width: 75%;
+	}
+	
+	/* 7/10 */
+	.col.s-70
+	{
+		width: 70%;
+	}
+	
+	/* 2/3 */
+	.col.s-66
+	{
+		width: 66.66666%;
+	}
+	
+	/* 3/5 */
+	.col.s-60
+	{
+		width: 60%;
+	}	
+	
+	/* 1/2 */
+	.col.s-50
+	{
+		width: 50%;
+	}
+	
+	/* 2/5 */
+	.col.s-40
+	{
+		width: 40%;
+	}
+	
+	/* 1/3 */
+	.col.s-33
+	{
+		width: 33.33333%;
+	}
+	
+	/* 3/10 */
+	.col.s-30
+	{
+		width: 30%;
+	}
+
+	/* 1/4 */
+	.col.s-25
+	{
+		width: 25%;
+	}
+	
+	/* 1/5 */
+	.col.s-20
+	{
+		width: 20%;
+	}
+	
+	/* 1/6 */
+	.col.s-16
+	{
+		width: 16,66666%;
+	}
+	
+	/* 1/10 */
+	.col.s-10
+	{
+		width: 10%;
+	}
+}
+
